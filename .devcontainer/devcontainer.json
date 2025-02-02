@@ -1,0 +1,20 @@
+{
+    "name": "Go Development",
+    "image": "golang:1.23.5-alpine",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.go",
+                "ms-vscode.go",
+                "ms-azuretools.vscode-docker"
+            ],
+            "settings": {
+                "go.useLanguageServer": true,
+                "go.toolsEnvVars": {
+                    "GO111MODULE": "on"
+                }
+            }
+        }
+    },
+    "postCreateCommand": "go mod tidy"
+}

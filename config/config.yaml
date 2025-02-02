@@ -1,0 +1,11 @@
+ports:
+  - port: 8080
+    target: "http://example.com"
+    headers:
+      Host: "example.com"
+      X-Custom-Header: "CustomValue1"
+  - port: 8081
+    target: "http://another-example.com"
+    headers:
+      Host: "another-example.com"
+      X-Custom-Header: "CustomValue2"
