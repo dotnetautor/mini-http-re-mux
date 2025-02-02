@@ -77,7 +77,7 @@ To build and run the Docker container, use the following commands:
 
 2. Run the Docker container:
    ```
-   docker run -p 8080:8080 -p 8081:8081 -v ./config.yaml:/app/config/config.yaml minihttremux
+   docker run -p 8080:8080 -p 8081:8081 -v ./config.yaml:/app/config/config.yaml dotnetautor/mini-http-re-mux
    ```
 
 ## Docker Compose
@@ -87,7 +87,7 @@ You can also use Docker Compose to manage the container. Here is an example `doc
 ```yaml
 services:
   minihttremux:
-    image: minihttremux
+    image: dotnetautor/mini-http-re-mux
     build: .
     ports:
       - "8080:8080"
